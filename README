@@ -1,0 +1,5 @@
+TODO:
+- add sounds
+- consolidate all notif-related sound stuff into dunst notif.sh
+  instead of leaving some of them (i.e. volume and
+  brightness) in sway config

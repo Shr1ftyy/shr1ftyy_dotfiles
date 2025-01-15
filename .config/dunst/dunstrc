@@ -1,0 +1,4 @@
+[play_sound]
+    summary = "*"
+    script = /home/clu/.config/dunst/notif.sh
+# vim: ft=cfg
