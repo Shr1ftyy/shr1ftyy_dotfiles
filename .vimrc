@@ -10,6 +10,7 @@ set ruler
 set wrap!
 highlight Comment ctermfg=green
 set noswapfile
+set autoread
 
 au FileType python setl shiftwidth=4 tabstop=4
 au FileType rs setl shiftwidth=4 tabstop=4
@@ -24,7 +25,8 @@ function InitLspPlugins()
     Plug 'ziglang/zig.vim'
     Plug 'junegunn/fzf'
     Plug 'junegunn/fzf.vim'
-    Plug 'ghifarit53/tokyonight-vim'
+    Plug 'gruvbox-community/gruvbox'
+    Plug 'sheerun/vim-wombat-scheme'
 
 	call plug#end()
 endfunction
@@ -55,6 +57,9 @@ endfunction
 
 call StartLsp()
 
-colorscheme tokyonight
-hi Normal guibg=NONE ctermbg=NONE
+set background=dark
+colorscheme wombat
+" hi Normal guibg=NONE ctermbg=NONE
 
+map <F9> :bprevious<CR>
+map <F10> :bnext<CR>
